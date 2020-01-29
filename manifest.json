@@ -1,0 +1,40 @@
+{
+ "browser_specific_settings": {
+    "gecko": {
+      "id": "wapp-bank@pdulvp.org"
+    }
+  },
+
+  "manifest_version": 2,
+  "name": "Boursorama",
+  "author": "pdulvp",
+  "version": "1.0",
+  "description": "Adds a solid red border to all webpages matching mozilla.org.",
+
+  "icons": {
+    "48": "icons/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://tradingboard.boursorama.com/*"],
+      "js": ["boursorama.js"]
+    }
+  ], 
+  
+  "background": {
+	  "scripts": ["background-script.js"]
+	}, 
+	"permissions": [
+	  "<all_urls>",
+	  "storage"
+	],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon.png",
+      "32": "icons/icon.png"
+    }
+  }
+
+}

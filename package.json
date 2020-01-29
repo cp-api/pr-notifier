@@ -1,0 +1,18 @@
+{
+  "name": "bugzilla-github-import",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pdulth/bugzilla-github-import.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pdulth",
+  "license": "CC-BY-NC-SA-4.0",
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  }
+}
