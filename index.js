@@ -187,15 +187,14 @@ var github = {
 //Load configuration and proceed
 console.log(JSON.stringify(process.env, null, " "));
 
-if (process.env.USER && process.env.PASSWORD) {
-	proceed({ user: process.env.USER, password: process.env.PASSWORD, "repository": "eclipse/capella" });
+if (process.env.GITHUB_USER && process.env.GITHUB_PASSWORD) {
+	proceed({ user: process.env.GITHUB_USER, password: process.env.GITHUB_PASSWORD, "repository": "eclipse/capella" });
 
 } else {
 	fsquery.read("config.json").then(e => proceed(JSON.parse(e))).catch(e => { console.log(e); });
 }
 
 function proceed(config) {
-	console.log(JSON.stringify(process.env, null, " "));
 
 	httpquery.user = config.user;
 	httpquery.password = config.password;

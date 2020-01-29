@@ -22,3 +22,5 @@ jobs:
     - run: node index
       env:
         CI: true
+        GITHUB_USER: ${{secrets.USER}}
+        GITHUB_PASSWORD: ${{secrets.PASSWORD}}
