@@ -185,6 +185,8 @@ var github = {
 
 
 //Load configuration and proceed
+console.log(JSON.stringify(process.env, null, " "));
+
 if (process.env.USER && process.env.PASSWORD) {
 	proceed({ user: process.env.USER, password: process.env.PASSWORD, "repository": "eclipse/capella" });
 
