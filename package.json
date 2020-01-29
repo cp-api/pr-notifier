@@ -11,8 +11,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "pdulth",
-  "license": "CC-BY-NC-SA-4.0",
-  "dependencies": {
-    "xml-js": "^1.6.11"
-  }
+  "license": "CC-BY-NC-SA-4.0"
 }
